@@ -2,18 +2,25 @@
 
 Education hub for Cryptobeam onboarding and best practices.
 
-## Features to wire
+Stack: Vite + React (Node 20).
+
+## Features to wire next
 - Courses + lessons
 - Hands-on labs
 - Progress tracking
 
 ## Project layout
-- src/index.jsx: React entry with sample sections
-- src/config.js: Product metadata and sample checklist
-- .devcontainer/: Node 20 devcontainer for consistency
-- package.json: placeholders for dev/build/lint/test (pick Vite/Next/Nx)
+- index.html: Vite entry
+- src/main.jsx: React root
+- src/index.jsx: UI shell showing checklist + feature slices
+- src/config.js: product metadata and feature checklist
+- src/services/apiClient.js: health/status fetcher using VITE_API_BASE_URL
+- .env.example: API base URL + token placeholders
+- .devcontainer/: Node 20 devcontainer
+- .github/workflows/ci.yml: lint/test/build
 
-## Suggested next steps
-1) Install your toolchain (Vite/Next) and replace the placeholder scripts.
-2) Hook real data sources and routing.
-3) Add lint/tests (eslint, vitest/jest) and CI in GitHub Actions.
+## Quick start
+- npm install
+- npm run dev
+- npm run test
+- npm run build
