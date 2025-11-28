@@ -1,0 +1,14 @@
+{
+  "name": "learn-cryptobeam",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "echo \"TODO: wire dev server for learn-cryptobeam\"",
+    "build": "echo \"TODO: build step for learn-cryptobeam\"",
+    "start": "echo \"TODO: start app for learn-cryptobeam\""
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
